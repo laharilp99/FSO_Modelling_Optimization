@@ -1,0 +1,86 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# ==============================
+# 🔐 Environment Variables
+# ==============================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==============================
+# 📦 Node.js Dependencies
+# ==============================
+backend/node_modules/
+frontend/node_modules/
+
+# ==============================
+# ⚙️ Build Outputs
+# ==============================
+frontend/build/
+backend/dist/
+backend/.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================
+# 🧪 Testing
+# ==============================
+coverage/
+*.test.js
+*.spec.js
+
+# ==============================
+# 🧰 IDE / OS Junk
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==============================
+# 🐍 If Python or Flask scripts ever exist
+# ==============================
+venv/
+__pycache__/
+instance/
+*.sqlite3
+
+# ==============================
+# 🧾 Misc
+# ==============================
+*.swp
+*.tsbuildinfo
+# Dependency Folders
+/node_modules
+/frontend/node_modules
+/backend/node_modules
+
+# Environment Variables and Secrets
+.env
+/backend/.env
+/frontend/.env

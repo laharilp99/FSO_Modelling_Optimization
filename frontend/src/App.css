@@ -1,0 +1,338 @@
+/* ---------- App.css (Full Copy-Pastable) ---------- */
+
+/* ---------- Global Body/HTML (centers login/signup) ---------- */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #f3f4f6; /* Light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Login/Signup Container (New title and centering) ---------- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f3f4f6;
+}
+
+/* ---------- The form itself (Wider and unified) ---------- */
+.form {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  /* Updated max-width to make it wider as requested */
+  max-width: 400px; 
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box; /* Crucial for padding/width calculation */
+}
+
+/* ---------- Title ---------- */
+.form-title {
+  font-size: 1.5rem; /* Made title bigger */
+  line-height: 1.75rem;
+  font-weight: 700; /* Made title bolder */
+  text-align: center;
+  color: #1f2937; /* Darker title color */
+  margin-bottom: 1.5rem; /* More space below title */
+}
+
+/* ---------- Input container ---------- */
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-container input,
+.form button {
+  outline: none;
+  border: 1px solid #d1d5db; /* Lighter border for better look */
+  margin: 8px 0;
+  box-sizing: border-box; /* Ensure input fits within width */
+}
+
+/* ---------- Input box ---------- */
+.input-container input {
+  background-color: #f9fafb; /* Slightly off-white background */
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+}
+
+.input-container span {
+  display: grid;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  place-content: center;
+}
+
+.input-container span svg {
+  color: #9CA3AF;
+  width: 1.2rem; /* Icon size slightly increased */
+  height: 1.2rem;
+}
+
+/* ---------- Submit button ---------- */
+.submit {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #4F46E5;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600; /* Bolder text */
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.05em; /* Added subtle letter spacing */
+}
+
+.submit:hover {
+  background-color: #4338CA;
+}
+
+/* ---------- Signup link ---------- */
+.signup-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signup-link span {
+  text-decoration: none;
+  font-weight: 600;
+  color: #4F46E5;
+  transition: color 0.2s;
+}
+
+.signup-link span:hover {
+  color: #4338CA;
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------- */
+/* ---------- FSO Simulation Page Styles (No change) -- */
+/* ---------------------------------------------------- */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0f172a; /* Slate-950 background */
+  color: white;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+/* ---------- Header ---------- */
+.App header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e293b; /* Slate-800 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.App header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2dd4bf; /* Teal accent */
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ---------- Main Layout ---------- */
+.App main {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* ---------- Visualization Section ---------- */
+.visualization-section {
+  flex: 3;
+  background-color: #0f172a;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
+  position: relative; /* Needed for pseudo-elements */
+}
+
+/* Subtle grid pattern overlay */
+.visualization-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+/* Gentle water ripple animation */
+.visualization-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 255, 255, 0.05), transparent 70%);
+  animation: waterRipple 8s infinite ease-in-out;
+  z-index: 0;
+}
+
+@keyframes waterRipple {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+/* Ensure actual simulation (guppies, canvas, etc.) renders above */
+.visualization-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Control Panel ---------- */
+.control-panel {
+  flex: 1;
+  background-color: #1e293b;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.control-panel h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fde047; /* Yellow title */
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.effective-stress-display {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #0f172a;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #2dd4bf;
+}
+
+
+/* ---------- Stress Sliders ---------- */
+.slider-box {
+  background-color: #0f172a;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Buttons ---------- */
+.sim-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.sim-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.sim-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+.run-btn {
+  background-color: #14b8a6; /* Teal */
+}
+
+.run-btn:hover {
+  background-color: #0d9488;
+}
+
+.reset-btn {
+  background-color: #475569; /* Slate */
+}
+
+.reset-btn:hover {
+  background-color: #334155;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 1024px) {
+  .App main {
+    flex-direction: column;
+  }
+
+  .visualization-section,
+  .control-panel {
+    width: 100%;
+    flex: unset;
+  }
+}
