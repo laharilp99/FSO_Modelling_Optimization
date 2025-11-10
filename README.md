@@ -1,5 +1,7 @@
 🐠 Fish Swarm Optimisation (FSO) Modelling for Guppy Shoaling
 🎯 A MERN-Based Predictive Simulator for Collective Behaviour Under Environmental Stress
+
+
 🌍 1. Problem Description
 
 The fundamental challenge this project addresses is the difficulty in systematically observing and quantifying the breakdown of complex collective behaviors in aquatic species—specifically the guppy (Poecilia reticulata)—under controlled, quantifiable stress.
